@@ -1,0 +1,17 @@
+
+<div class="container ">
+
+<h2>Login</h2>
+<form (ngSubmit)="onSubmit()">
+    <div class="container my-2">
+        <label for="name">Username</label>
+        <input type="text" placeholder="Enter your Username" >
+    </div>
+    <div class="container my-2">
+        <label for="pass">Password</label>
+        <input type="password" placeholder="Enter your Password"  >
+    </div>
+    <app-button text="Login" (btnclick)="afterlogin()"></app-button>
+    <app-button text="Registration" (btnclick)="gotoregistration()"></app-button>
+</form>
+</div>
